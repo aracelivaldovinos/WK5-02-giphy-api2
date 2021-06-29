@@ -18,6 +18,11 @@ $("#gifSearch").click(function() {
       return response.json();
     })
     .then(function (response) {
+      // how do we remove content?
+
+      $('.image-dump').html('');
+      //
+
       for (let item of response.data) {
         const { url } = item.images.original;
         
@@ -29,4 +34,9 @@ $("#gifSearch").click(function() {
     .catch(function(error) {
       return error;
     });
+    
+});
+
+$("#gifRemove").click(function(){
+  $('.image-dump').html('');
 });

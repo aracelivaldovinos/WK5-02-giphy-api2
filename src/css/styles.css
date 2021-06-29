@@ -1,3 +1,37 @@
 body {
-  background-color: yellow;
+  background-color: #557a95;
+}
+
+.image-dump {
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  grid-auto-rows: 250px;
+  justify-content: center;
+
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+}
+
+#gifSearch {
+  background-color: #B1A296;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  
+}
+#gifRemove {
+  background-color: #938E93;
 }
